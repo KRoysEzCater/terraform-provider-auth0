@@ -3,7 +3,7 @@ resource "auth0_action" "action_foo" {
   code   = <<-EOT
     exports.onContinuePostLogin = async (event, api) => {
       console.log("foo");
-    };"
+    };
 	EOT
   deploy = true
 
@@ -18,7 +18,7 @@ resource "auth0_action" "action_bar" {
   code   = <<-EOT
     exports.onContinuePostLogin = async (event, api) => {
       console.log("bar");
-    };"
+    };
 	EOT
   deploy = true
 
